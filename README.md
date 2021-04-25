@@ -1,244 +1,125 @@
+Directory amdgpu-dkms contains the dkms (linux kernel module) source from
+  amdgpu-dkms_5.9.20.104-1247438_all.deb
 
+Source : https://drivers.amd.com/drivers/linux/amdgpu-pro-21.10-1247438-ubuntu-20.04.tar.xz
+- which contains 118 .deb files (43 for i386, 66 for amd64, 9 other):
 
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Radeon™ Software for Linux® Installation &mdash; amdgpu graphics and compute stack 21.10-1247438 documentation</title>
-  
+amdgpu_21.10-1247438_amd64.deb
+amdgpu-core_21.10-1247438_all.deb
+amdgpu-dkms_5.9.20.104-1247438_all.deb
+amdgpu-dkms-firmware_5.9.20.104-1247438_all.deb
+amdgpu-doc_21.10-1247438_all.deb
+amdgpu-lib_21.10-1247438_amd64.deb
+amdgpu-lib32_21.10-1247438_amd64.deb
+amdgpu-pin_21.10-1247438_all.deb
+amdgpu-pro_21.10-1247438_amd64.deb
+amdgpu-pro-core_21.10-1247438_all.deb
+amdgpu-pro-lib32_21.10-1247438_amd64.deb
+amdgpu-pro-pin_21.10-1247438_all.deb
+amdgpu-pro-rocr-opencl_21.10-1247438_amd64.deb
+amf-amdgpu-pro_21.10-1247438_amd64.deb
+clinfo-amdgpu-pro_21.10-1247438_amd64.deb
+clinfo-amdgpu-pro_21.10-1247438_i386.deb
+comgr-amdgpu-pro_2.0.0-1247438_amd64.deb
+comgr-amdgpu-pro-dev_2.0.0-1247438_amd64.deb
+gst-omx-amdgpu_1.0.0.1-1247438_amd64.deb
+gst-omx-amdgpu_1.0.0.1-1247438_i386.deb
+hip-rocr-amdgpu-pro_21.10-1247438_amd64.deb
+hsakmt-roct-amdgpu_1.0.9-1247438_amd64.deb
+hsakmt-roct-amdgpu-dev_1.0.9-1247438_amd64.deb
+hsa-runtime-rocr-amdgpu_1.3.0-1247438_amd64.deb
+hsa-runtime-rocr-amdgpu-dev_1.3.0-1247438_amd64.deb
+kfdtest-amdgpu_1.0.9-1247438_amd64.deb
+libdrm2-amdgpu_2.4.100-1247438_amd64.deb
+libdrm2-amdgpu_2.4.100-1247438_i386.deb
+libdrm-amdgpu-amdgpu1_2.4.100-1247438_amd64.deb
+libdrm-amdgpu-amdgpu1_2.4.100-1247438_i386.deb
+libdrm-amdgpu-common_1.0.0-1247438_all.deb
+libdrm-amdgpu-dev_2.4.100-1247438_amd64.deb
+libdrm-amdgpu-dev_2.4.100-1247438_i386.deb
+libdrm-amdgpu-radeon1_2.4.100-1247438_amd64.deb
+libdrm-amdgpu-radeon1_2.4.100-1247438_i386.deb
+libdrm-amdgpu-utils_2.4.100-1247438_amd64.deb
+libdrm-amdgpu-utils_2.4.100-1247438_i386.deb
+libegl1-amdgpu-mesa_20.3.4-1247438_amd64.deb
+libegl1-amdgpu-mesa_20.3.4-1247438_i386.deb
+libegl1-amdgpu-mesa-dev_20.3.4-1247438_amd64.deb
+libegl1-amdgpu-mesa-dev_20.3.4-1247438_i386.deb
+libegl1-amdgpu-mesa-drivers_20.3.4-1247438_amd64.deb
+libegl1-amdgpu-mesa-drivers_20.3.4-1247438_i386.deb
+libegl1-amdgpu-pro_21.10-1247438_amd64.deb
+libegl1-amdgpu-pro_21.10-1247438_i386.deb
+libgbm1-amdgpu_20.3.4-1247438_amd64.deb
+libgbm1-amdgpu_20.3.4-1247438_i386.deb
+libgbm-amdgpu-dev_20.3.4-1247438_amd64.deb
+libgbm-amdgpu-dev_20.3.4-1247438_i386.deb
+libgl1-amdgpu-mesa-dev_20.3.4-1247438_amd64.deb
+libgl1-amdgpu-mesa-dev_20.3.4-1247438_i386.deb
+libgl1-amdgpu-mesa-dri_20.3.4-1247438_amd64.deb
+libgl1-amdgpu-mesa-dri_20.3.4-1247438_i386.deb
+libgl1-amdgpu-mesa-glx_20.3.4-1247438_amd64.deb
+libgl1-amdgpu-mesa-glx_20.3.4-1247438_i386.deb
+libgl1-amdgpu-pro-appprofiles_21.10-1247438_all.deb
+libgl1-amdgpu-pro-dri_21.10-1247438_amd64.deb
+libgl1-amdgpu-pro-dri_21.10-1247438_i386.deb
+libgl1-amdgpu-pro-ext_21.10-1247438_amd64.deb
+libgl1-amdgpu-pro-ext_21.10-1247438_i386.deb
+libgl1-amdgpu-pro-glx_21.10-1247438_amd64.deb
+libgl1-amdgpu-pro-glx_21.10-1247438_i386.deb
+libglapi1-amdgpu-pro_21.10-1247438_amd64.deb
+libglapi1-amdgpu-pro_21.10-1247438_i386.deb
+libglapi-amdgpu-mesa_20.3.4-1247438_amd64.deb
+libglapi-amdgpu-mesa_20.3.4-1247438_i386.deb
+libgles1-amdgpu-mesa_20.3.4-1247438_amd64.deb
+libgles1-amdgpu-mesa_20.3.4-1247438_i386.deb
+libgles1-amdgpu-mesa-dev_20.3.4-1247438_amd64.deb
+libgles1-amdgpu-mesa-dev_20.3.4-1247438_i386.deb
+libgles2-amdgpu-mesa_20.3.4-1247438_amd64.deb
+libgles2-amdgpu-mesa_20.3.4-1247438_i386.deb
+libgles2-amdgpu-mesa-dev_20.3.4-1247438_amd64.deb
+libgles2-amdgpu-mesa-dev_20.3.4-1247438_i386.deb
+libgles2-amdgpu-pro_21.10-1247438_amd64.deb
+libgles2-amdgpu-pro_21.10-1247438_i386.deb
+libllvm11.0-amdgpu_11.0-1247438_amd64.deb
+libllvm11.0-amdgpu_11.0-1247438_i386.deb
+libllvm-amdgpu-pro-rocm_12.0-1247438_amd64.deb
+libxatracker2-amdgpu_20.3.4-1247438_amd64.deb
+libxatracker2-amdgpu_20.3.4-1247438_i386.deb
+libxatracker-amdgpu-dev_20.3.4-1247438_amd64.deb
+libxatracker-amdgpu-dev_20.3.4-1247438_i386.deb
+llvm-amdgpu-11.0_11.0-1247438_amd64.deb
+llvm-amdgpu-11.0_11.0-1247438_i386.deb
+llvm-amdgpu_11.0-1247438_amd64.deb
+llvm-amdgpu_11.0-1247438_i386.deb
+llvm-amdgpu-11.0-dev_11.0-1247438_amd64.deb
+llvm-amdgpu-11.0-dev_11.0-1247438_i386.deb
+llvm-amdgpu-11.0-runtime_11.0-1247438_amd64.deb
+llvm-amdgpu-11.0-runtime_11.0-1247438_i386.deb
+llvm-amdgpu-dev_11.0-1247438_amd64.deb
+llvm-amdgpu-dev_11.0-1247438_i386.deb
+llvm-amdgpu-pro-rocm_12.0-1247438_amd64.deb
+llvm-amdgpu-pro-rocm-dev_12.0-1247438_amd64.deb
+llvm-amdgpu-runtime_11.0-1247438_amd64.deb
+llvm-amdgpu-runtime_11.0-1247438_i386.deb
+mesa-amdgpu-common-dev_20.3.4-1247438_amd64.deb
+mesa-amdgpu-common-dev_20.3.4-1247438_i386.deb
+mesa-amdgpu-omx-drivers_20.3.4-1247438_amd64.deb
+mesa-amdgpu-omx-drivers_20.3.4-1247438_i386.deb
+mesa-amdgpu-va-drivers_20.3.4-1247438_amd64.deb
+mesa-amdgpu-va-drivers_20.3.4-1247438_i386.deb
+mesa-amdgpu-vdpau-drivers_20.3.4-1247438_amd64.deb
+mesa-amdgpu-vdpau-drivers_20.3.4-1247438_i386.deb
+ocl-icd-libopencl1-amdgpu-pro_21.10-1247438_amd64.deb
+ocl-icd-libopencl1-amdgpu-pro_21.10-1247438_i386.deb
+ocl-icd-libopencl1-amdgpu-pro-dev_21.10-1247438_amd64.deb
+ocl-icd-libopencl1-amdgpu-pro-dev_21.10-1247438_i386.deb
+opencl-orca-amdgpu-pro-icd_21.10-1247438_amd64.deb
+opencl-orca-amdgpu-pro-icd_21.10-1247438_i386.deb
+opencl-rocr-amdgpu-pro_21.10-1247438_amd64.deb
+opencl-rocr-amdgpu-pro-dev_21.10-1247438_amd64.deb
+rocm-device-libs-amdgpu-pro_1.0.0-1247438_amd64.deb
+vulkan-amdgpu_21.10-1247438_amd64.deb
+vulkan-amdgpu-pro_21.10-1247438_amd64.deb
+vulkan-amdgpu-pro_21.10-1247438_i386.deb
+xserver-xorg-amdgpu-video-amdgpu_19.1.0-1247438_amd64.deb
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Preamble" href="preamble.html" /> 
-</head>
-
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="#" class="icon icon-home"> amdgpu graphics and compute stack
-          
-
-          
-          </a>
-
-          
-            
-            
-              <div class="version">
-                21.10
-              </div>
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="preamble.html">Preamble</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-prereq.html">Prerequisites</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-script.html">Using the <code class="docutils literal notranslate"><span class="pre">amdgpu-install</span></code> Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-installing.html">Installing or Uninstalling AMDGPU</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-bugrep.html">Reporting Bugs</a></li>
-</ul>
-
-            
-          
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">amdgpu graphics and compute stack</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="#">Docs</a> &raquo;</li>
-        
-      <li>Radeon™ Software for Linux® Installation</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="radeon-software-for-linux-installation">
-<h1>Radeon™ Software for Linux® Installation<a class="headerlink" href="#radeon-software-for-linux-installation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="preamble.html">Preamble</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-overview.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install-overview.html#stack-variants">Stack Variants</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="install-prereq.html">Prerequisites</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install-prereq.html#downloading-the-package-archive">Downloading the Package Archive</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-prereq.html#extracting-the-package-archive">Extracting the Package Archive</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-prereq.html#configuring-access-to-the-distribution-repository-rhel-and-sle-only">Configuring Access to the Distribution Repository (RHEL and SLE only)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="install-script.html">Using the <code class="docutils literal notranslate"><span class="pre">amdgpu-install</span></code> Script</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install-script.html#script-types">Script Types</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-script.html#purpose">Purpose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-script.html#invoking-the-amdgpu-install-script">Invoking the <code class="docutils literal notranslate"><span class="pre">amdgpu-install</span></code> Script</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-script.html#scenarios">Scenarios</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="install-installing.html">Installing or Uninstalling AMDGPU</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install-installing.html#installing-the-all-open-variant">Installing the All-Open Variant</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-installing.html#installing-the-pro-variant">Installing the Pro Variant</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-installing.html#secure-boot-support">Secure Boot Support</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-installing.html#uninstalling-the-amdgpu-graphics-stack">Uninstalling the AMDGPU Graphics Stack</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="install-bugrep.html">Reporting Bugs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install-bugrep.html#generating-a-bug-report">Generating a Bug Report</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-
-
-           </div>
-           
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="preamble.html" class="btn btn-neutral float-right" title="Preamble" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright Advanced Micro Devices 2017, 2021
-
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
-</html>
