@@ -1,6 +1,8 @@
 Directory amdgpu-dkms contains the dkms (linux kernel module) source from
   amdgpu-dkms_5.9.20.104-1247438_all.deb
 
+Installation instructions: https://amdgpu-install.readthedocs.io/en/latest/install-installing.html
+
 Source : https://www.amd.com/en/support/kb/release-notes/rn-amdgpu-unified-linux-21-10
 
 (link https://drivers.amd.com/drivers/linux/amdgpu-pro-21.10-1247438-ubuntu-20.04.tar.xz)
